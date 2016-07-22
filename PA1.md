@@ -1,10 +1,9 @@
 # Reproducible Research: Peer Assessment 1
 
 
-## Loading and preprocessing the data
 
---------------------------------------------------------------------------------
 
+### Loading and preprocessing the data
 First, all environment variables will br removed.
 
 ```r
@@ -86,11 +85,10 @@ head(activity)
 ```
 
 
+---
 
-## What is mean total number of steps taken per day?
-
---------------------------------------------------------------------------------
-
+### What is mean total number of steps taken per day?
+---
 First, data will be processed into a suitable format for analysis.
 
 ```r
@@ -130,11 +128,9 @@ legend('topright', lty = 1, lwd = 3, col = c("blue", "red"),
  * __Median__ of steps taken per day: 10765 steps
 
 
+---
 
-## What is the average daily activity pattern?
-
---------------------------------------------------------------------------------
-
+### What is the average daily activity pattern?
 First, data will be processed into a suitable format for analysis.
 
 ```r
@@ -177,10 +173,10 @@ legend("topright",
 
  * __Maximum__ of 206.1698 is in interval 835.
 
-## Imputing missing values
 
---------------------------------------------------------------------------------
+---
 
+### Imputing missing values
 Here, the number of missing values in the dataset will be calculated.
 (Number of rows with NAs)
 
@@ -258,10 +254,10 @@ Do these values differ from the estimates from the first part of the assignment?
 
 The *mean* value is the *same* as before fill the NAs. That's because all NAs were replaced by mean of the respective interval. The median value increased a little bit and is almost the same as the mean value. This increase depends on where the missing values are.
 
-## Are there differences in activity patterns between weekdays and weekends?
 
---------------------------------------------------------------------------------
+---
 
+### Are there differences in activity patterns between weekdays and weekends?
 First a factor with two levels (“weekday” and “weekend”) will be added to the dataset.
 
 ```r
